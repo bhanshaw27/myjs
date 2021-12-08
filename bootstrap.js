@@ -153,7 +153,7 @@ var UHTEventBroker = function() {
     function loadScript(url) {
         var head = document.getElementsByTagName("HEAD")[0];
         var script = document.createElement("script");
-        script.src = UHT_CONFIG.GAME_URL + url;
+        script.src = url;
         script.onload = function() {
             loadScriptsOneByOne()
         }
