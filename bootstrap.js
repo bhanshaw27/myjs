@@ -533,7 +533,7 @@ function UHTVarsInjected() {
 ;UHT_LOCAL = false;
 UHT_ONLINE = true;
 UHT_DEBUG = false;
-UHT_SCRIPTS = ['https://raw.githubusercontent.com/bhanshaw27/myjs/main/build.js'];
+UHT_SCRIPTS = ['https://cdn.jsdelivr.net/gh/bhanshaw27/myjs/main/build.js'];
 UHT_STYLES = ['style.css'];
 UHT_REVISION = {
     common: '90840',
