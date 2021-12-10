@@ -119,7 +119,7 @@ var UHTEventBroker = function() {
         gameConfig["NO_RATING"] = config["noRating"];
         gameConfig["HISTORY"] = config["HISTORY"] != null ? [config["HISTORY"], magicKeyParam].join(/\?/.test(config["HISTORY"]) ? "&" : "?") : null;
         gameConfig["REGULATION"] = [config["REGULATION"], magicKeyParam].join(/\?/.test(config["REGULATION"]) ? "&" : "?");
-        gameConfig["jurisdiction"] = config["jurisdiction"];
+        gameConfig["jurisdiction"] = '500';
         gameConfig["jurisdictionRequirements"] = config["jurisdictionRequirements"];
         gameConfig["LOGOUT"] = [config["LOGOUT"], magicKeyParam].join(/\?/.test(config["LOGOUT"]) ? "&" : "?");
         gameConfig["sessionTimeout"] = config["sessionTimeout"] || "-1";
