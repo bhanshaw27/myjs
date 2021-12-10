@@ -1,6 +1,6 @@
 var UHT_LOCAL = false;
 var UHT_ONLINE = false;
-var UHT_DEBUG = false;
+var UHT_DEBUG = true;
 var UHT_SCRIPTS = [];
 var UHT_STYLES = [];
 var UHT_GAME_SIZE = 0;
@@ -153,7 +153,7 @@ var UHTEventBroker = function() {
     function loadScript(url) {
         var head = document.getElementsByTagName("HEAD")[0];
         var script = document.createElement("script");
-        script.src = url;
+        script.src = UHT_CONFIG.GAME_URL + url;
         script.onload = function() {
             loadScriptsOneByOne()
         }
@@ -533,7 +533,7 @@ function UHTVarsInjected() {
 ;UHT_LOCAL = false;
 UHT_ONLINE = true;
 UHT_DEBUG = false;
-UHT_SCRIPTS = ['https://cdn.jsdelivr.net/gh/bhanshaw27/myjs/build.js'];
+UHT_SCRIPTS = ['build.js'];
 UHT_STYLES = ['style.css'];
 UHT_REVISION = {
     common: '90840',
